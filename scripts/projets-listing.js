@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!gridContainer || !cardTemplate) return;
 
     // Fetch the JSON data
-    fetch('/data/projets.json')
+    fetch('data/projets.json')
         .then(response => {
             if (!response.ok) throw new Error("Impossible de charger les projets.");
             return response.json();

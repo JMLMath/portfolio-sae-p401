@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // 2. FETCH DATA ASYNCHRONOUSLY
-    fetch('/data/projets.json')
+    fetch('data/projets.json')
         .then(response => {
             if (!response.ok) throw new Error("Fichier JSON introuvable");
             return response.json();
