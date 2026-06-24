@@ -1,0 +1,12 @@
+{
+  "SGBD": "Système de gestion de bases de données",
+  "DHCP": "Serveur d'attribution d'adresses IP aux machines d'un réseau",
+  "DNS": "Serveur attribuant les noms de domaines aux machine (ex: google.com - 8.8.8.8)",
+  "MySQL": "Système de gestion de base de données propriétaire. Un des plus utilisé du web.",
+  "SQL": "Langage de requêtage de base de donnée relationnelle. (SQL pour Structured Query Language)",
+  "PHP": "Langage de programmtion de serveur sortie en 1995. Il fait encore tourner de nombreux sites web, tel que Facebook, Wikipedia, Tumblr, Yahoo ou encore Shopify.",
+  "GitHub": "Plateforme en ligne qui permet de stocker, de partager et de collaborer sur du code informatique",
+  "Git": "Logiciel de gestion de version de code.",
+  "responsabilités": "Une unique tâche que doit accomplir une partie d'un programme informatique.",
+  "patron de conception": "Arrangement caractéristique de modules, reconnu comme bonne pratique pour résoudre un problème de conception d'un logiciel."
+}

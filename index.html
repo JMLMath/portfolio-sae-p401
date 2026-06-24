@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - [Prénom Nom]</title>
+
+    <link rel="stylesheet" href="styles/default.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="logo">
+            Mathéo JML
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#accueil" class="active">Accueil</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#competences">Compétences</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="accueil" class="hero-section">
+            <div class="hero-content">
+                <h1>Bonjour, je suis <br><strong>Mathéo JEAN MARIE LEBON</strong>.</h1>
+                <p class="hero-description">
+                    Je suis actuellement en deuxième année de BUT Informatique. <br />
+                    J'ai choisi l'informatique car c'est un domaine qui me passionne. En effet, j'aime comprendre
+                    comment fonctionnent les choses, et les améliorer. <br />
+                    J'aime particulièrement le developpement web back-end, ainsi que l'administration de système et des
+                    bases de données. J'apprécie fortement concevoir des système performants et optimisés. <br />
+                    Tout naturellement, je souhaite devenir DevOps. En effet, ceci est selon moi, le compromis parfait
+                    entre développement et administration système.
+                </p>
+                <a href="#projets" class="btn-primary">Découvrir mes projets</a>
+            </div>
+            <div class="hero-image-placeholder">
+                <span>[Image: Photo Personnelle]</span>
+            </div>
+        </section>
+
+        <section id="projets" class="content-section">
+            <div class="section-header">
+                <h2>Mes Projets</h2>
+            </div>
+
+            <p class="section-intro">
+                Découvrez ci-dessous une sélection de mes projets universitaires.
+            </p>
+
+            <div id="projects-grid" class="card-grid">
+                
+                <article class="feature-card" id="project-card-template" style="display: none;">
+                    <h3 class="project-title-placeholder">[Nom du projet]</h3>
+                    
+                    <div style="margin-top: 1.5rem;">
+                        <a href="#" class="btn-primary project-link-placeholder">Voir le projet</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="competences" class="content-section">
+            <div class="section-header">
+                <h2>Mes compétences</h2>
+            </div>
+
+            <p class="section-intro">
+                Veuillez trouver ci-dessous mes compétences.
+            </p>
+
+            <div class="card-grid">
+                <article class="feature-card">
+                    <div class="icon-placeholder">[Icône]</div>
+                    <h3>Développement WEB</h3>
+                    <p>Je sais utiliser, de par ma formation mais aussi grâce à mon expérience, les langages de
+                        programmation du web tel que HTML, CSS ou le Java Script.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="icon-placeholder">[Icône]</div>
+                    <h3>Base de données relationnelle</h3>
+                    <p>Je connais le langage SQL, que j'ai pu pratiquer sur les <span class="defined-word">SGBD</span>
+                        PostgreSQL, MySQL ou encore SQLite. <br />
+                        Par ailleurs, je sais bien modéliser et concevoir des bases de données, tel que des schémas
+                        Entité-Association performants. De plus, étant quelqu'un qui aime optimiser les choses, je sais
+                        éviter du mieux que possible les redondances.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="icon-placeholder">[Icône]</div>
+                    <h3>Administration systèmes</h3>
+                    <p>Je sais administrer des systèmes Linux, ainsi que les services qui y tournent tel qu'un serveur
+                        web, une base de données, un serveur <span class="defined-word">DHCP</span> ou <span
+                            class="defined-word">DNS</span> entre autres.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="icon-placeholder">[Icône]</div>
+                    <h3>Développement d'application</h3>
+                    <p>Je connais également des langage utiles au développement d'application tel que Java, C ou encore
+                        Python.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Créé par Mathéo JEAN MARIE LEBON - SAÉ P401 - v.0.2</p>
+    </footer>
+
+    <script src="scripts/projets-listing.js"></script>
+    <script src="scripts/glossary.js"></script>
+</body>
+
+</html>

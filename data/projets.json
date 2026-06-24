@@ -1,0 +1,56 @@
+{
+    "0" : {
+        "id": "0",
+        "nom": "Mnémosyne",
+        "contexte": "SAE (projet universitaire)",
+        "objectif": "L’objectif de ce projet est de finaliser notre application de suivi des cohortes des promotions de BUT de l’IUT de Villetaneuse. Cette application a pour objectif de faciliter l’analyse des différentes années d’étudiants par les responsables de département. ",
+        "annee": "2026 - BUT 2",
+        "missions": "J’ai conteneurisé l’application avec sa base de données afin de faciliter l’exportation et limiter les bugs provoqués par les différentes configurations présentes sur les machines des développeurs. J’ai amélioré le calcul des données statistiques au sein de la base de données. Ces calculs sont dorénavant optimisés. ",
+        "competences": [
+            {
+                "nom": "Docker (conteneurisation)",
+                "text": "Ce projet m'a permit d'améliorer mes compétences en conteneurisation ainsi qu'en déploiement d'application."
+            },
+            {
+                "nom": "Base de donnée relationnelle",
+                "text": "Au cours de ce projets, j'ai eu à travailler, aussi bien individuellement qu'en groupe sur des bases de données <span class=\"defined-word\">MySQL</span>. Ainsi, j'ai pu renforcer mes compétences en <span class=\"defined-word\">SQL</span>."
+            },
+            {
+                "nom": "PHP",
+                "text": "Comme cela peut être vu sur le dépôt <span class=\"defined-word\">GitHub</span> (diponible ci-dessous), ce projet et quasi-entièrement écrit en <span class=\"defined-word\">PHP</span>. J'ai ainsi peut perfectionner mes compétences dans ce langage de programmation, qui, bien que daté reste encore très demandé aujourd'hui."
+            },
+            {
+                "nom": "Bonnes pratiques",
+                "text": "Durant ce projet, j'ai personnellement veillé à respecter les bonne pratiques de programmation. Comme cela peut être vu sur le dépôt <span class=\"defined-word\">GitHub</span> (disponible ci-dessous), les <span class=\"defined-word\">responsabilités</span> sont clairement séparé dans un fichier pour chacune d'entre elle. Par ailleurs, le <span class=\"defined-word\">patron de conception</span> MVCS (modèle vue controller service) à été suivit à la lettre. Enfin, tout au long du développement, nous avons travaillé sur plusieurs branches <span class=\"defined-word\">Git</span> afin qu'en cas de bug, nous ne le repercutions pas sur tout le programme."
+            }
+        ],
+        "bilan": "À l'avenir, je souhaiterais approfondir la mise en place d'une intégration continue (CI/CD) pour automatiser davantage les tests et le déploiement, ce qui permettrait de gagner en efficacité et en fiabilité. De plus, j'aimerais améliorer la communication au sein de l'équipe, notamment en instaurant des points de synchronisation plus réguliers pour mieux anticiper les dépendances entre les différentes tâches et optimiser la collaboration globale sur le projet."
+    },
+    "1": {
+        "id": "1",
+        "nom": "Jeu d'échec en Java",
+        "contexte": "SAE (projet universitaire)",
+        "objectif": "L'objectif de ce projet était de modéliser puis de développer, en équipe, un jeu d'échec jouable à deux personnes sur la même machine, en <span class=\"defined-word\">Java</span>.",
+        "annee": "2025 - BUT 1",
+        "missions": "J'ai modélisé les différents éléments du jeu dans un diagramme UML. J'ai veillé à ce que ce diagramme soit lisible, simple tout en restant le plus logique possible. <br/> Par ailleurs, dans notre groupe, j'ai veillé à ce que les tâches soient équitablement réparties. <br/> De plus, j'ai également programmé en <span class=\"defined-word\">Java</span> les classes qui m'ont été attribuées. J'ai corrigé toutes les erreurs et j'ai veillé à bien documenter mon code. Enfin, une fois que chaque personne avait terminé sa partie, j'ai assuré la gestion des branches sur <span class=\"defined-word\">GitHub</span> afin que le projet prenne forme correctement.",
+        "competences": [
+            {
+                "nom": "Gestion de version (Git)",
+                "text": "Durant ce projet, bien que non demandé dans les exigences, j'ai veillé à utiliser, avec mon équipe, le logiciel de gestion de version <span class=\"defined-word\">Git</span>. Pour ce faire, nous avions hébergé notre projet sur <span class=\"defined-word\">GitHub</span>. De plus, je me suis personnellement assuré du bon usage des branches. Enfin, je me chargeais de fusionner les branches des fonctionnalités dans la branche principale."
+            },
+            {
+                "nom": "Java",
+                "text": "J'ai pleinement exploité le langage <span class=\"defined-word\">Java</span> pour concevoir et implémenter le code des différentes classes et modules de l'application. En appliquant les principes fondamentaux de la programmation orientée objet (POO), j'ai structuré la logique métier du jeu, géré le comportement des pièces et assuré la robustesse générale du programme."
+            },
+            {
+                "nom": "Modélisation UML",
+                "text": "En amont du développement, j'ai réalisé la modélisation conceptuelle de l'application en <span class=\"defined-word\">UML</span>. Concevoir des diagrammes de classes clairs et rigoureux a été indispensable pour anticiper la structure des données et les interactions entre les objets, garantissant ainsi une transition fluide et sans ambiguïté vers la phase de code."
+            },
+            {
+                "nom": "Travail en équipe et Gestion de projet",
+                "text": "Ce projet ayant été réalisé à trois, il a nécessité une communication fluide et une organisation solide. J'ai participé activement à la répartition équitable des tâches et à la planification des sprints de développement. L'utilisation combinée de méthodes de gestion de projet et d'outils collaboratifs m'a permis de renforcer mon aptitude à travailler efficacement en équipe et à respecter les délais impartis."
+            }
+        ],
+        "bilan": "Dans l'ensemble, la réalisation de ce projet s'est achevée sur une note très positive, avec un livrable fonctionnel et rendu en temps et en heure. L'intégralité de notre travail, ainsi que l'historique de nos contributions, sont par ailleurs consultables directement via le dépôt <span class=\"defined-word\">GitHub</span> du projet. </br></br> Toutefois, avec le recul, cette expérience a mis en lumière des axes d'amélioration concernant notre organisation interne, particulièrement dans la gestion des difficultés. En effet, lorsqu'un membre de l'équipe rencontrait un blocage technique sur sa tâche, il avait tendance à rester isolé pour tenter de le résoudre seul. Ce manque d'entraide immédiate face aux obstacles a entraîné des retards sur certaines fonctionnalités complexes. Par conséquent, nous n'avons malheureusement pas pu terminer l'implémentation de l'algorithme de vérification de l'échec et mat avant la date de rendu. </br></br> Finalement, ce projet s'est révélé extrêmement formateur. J'en ai tiré une leçon essentielle : pour garantir l'efficacité et la progression d'une équipe de développement, il est crucial de savoir alterner judicieusement entre des phases de travail individuel (pour la concentration et la production) et des moments d'échange en groupe (pour la résolution de problèmes, l'entraide et le déblocage technique)." 
+    }
+}

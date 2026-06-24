@@ -1,0 +1,321 @@
+/* ==========================================================================
+   1. CSS Variables (Design System)
+   ========================================================================== */
+   :root {
+    /* Color Palette */
+    --bg-color: #FAFAFA;          /* Off-white background for an airy feel */
+    --white: #FFFFFF;             /* Pure white for cards and header */
+    --text-primary: #2C2C2C;      /* Dark grey to reduce eye strain */
+    --text-secondary: #555555;    /* Lighter grey for descriptions */
+    --accent-yellow: #F4D03F;     /* Soft Mustard yellow for strong accents */
+    --accent-light: #FFFACD;      /* Pastel yellow for subtle highlights/backgrounds */
+    --border-light: #EAEAEA;      /* Very light grey for subtle dividing lines */
+
+    /* Typography */
+    --font-primary: 'Inter', sans-serif;
+    --base-size: 16px;
+
+    /* Spacing & Layout */
+    --radius-md: 8px;             /* Rounded corners for images and cards */
+    --transition-smooth: 0.3s ease; /* Smooth transitions for hover effects */
+    --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.04); /* Very subtle drop shadow */
+}
+
+/* ==========================================================================
+   2. Global Resets & Base Styles
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: var(--base-size);
+    color: var(--text-primary);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   3. Header & Navigation
+   ========================================================================== */
+.site-header {
+    background-color: var(--white);
+    padding: 1.5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-weight: 600;
+    transition: color var(--transition-smooth);
+    position: relative;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: var(--text-primary);
+}
+
+/* Subtle yellow underline on hover for nav links */
+.main-nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--accent-yellow);
+    transition: width var(--transition-smooth);
+}
+
+.main-nav a:hover::after,
+.main-nav a.active::after {
+    width: 100%;
+}
+
+/* ==========================================================================
+   4. Hero Section (Accueil)
+   ========================================================================== */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem 5%;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-description {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+}
+
+/* Call to Action Button */
+.btn-primary {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    background-color: var(--accent-light);
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: var(--radius-md);
+    border: 1px solid transparent;
+    transition: all var(--transition-smooth);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-yellow);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-soft);
+}
+
+/* Image Placeholder */
+.hero-image-placeholder {
+    flex: 1;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+    background-color: var(--border-light);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    box-shadow: var(--shadow-soft);
+}
+
+/* ==========================================================================
+   5. Generic Content Sections (Formation, Compétences, Projets...)
+   ========================================================================== */
+.content-section {
+    padding: 5rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header {
+    margin-bottom: 1.5rem;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    display: inline-block;
+    border-bottom: 4px solid var(--accent-yellow);
+    padding-bottom: 5px;
+}
+
+.section-intro {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 3.5rem;
+    max-width: 800px;
+}
+
+/* Grid Layout for the Cards */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--border-light);
+    transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.icon-placeholder {
+    width: 50px;
+    height: 50px;
+    background-color: var(--accent-light);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: var(--text-primary);
+    margin-bottom: 1.2rem;
+}
+
+.feature-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+/* ==========================================================================
+   6. Footer
+   ========================================================================== */
+.site-footer {
+    background-color: var(--border-light);
+    text-align: center;
+    padding: 2rem 5%;
+    margin-top: 4rem;
+}
+
+.site-footer p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* ==========================================================================
+   7. Responsive Design (Media Queries)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 4rem 5%;
+    }
+
+    .hero-description {
+        margin: 0 auto 2rem auto;
+    }
+
+    .hero-image-placeholder {
+        margin-top: 2rem;
+    }
+}
+
+/* ==========================================================================
+   8. Glossary Tooltips
+   ========================================================================== */
+
+/* The interactive word in the text */
+.defined-word {
+    text-decoration: underline;
+    text-decoration-color: var(--accent-yellow);
+    text-decoration-thickness: 2px;
+    cursor: help;
+    transition: color var(--transition-smooth);
+}
+
+.defined-word:hover {
+    color: var(--text-secondary);
+}
+
+/* The tooltip container */
+.glossary-tooltip {
+    position: absolute;
+    background-color: var(--white);
+    border: 1px solid var(--accent-yellow);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+    color: var(--text-primary);
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: var(--radius-md);
+    z-index: 1000;
+    pointer-events: none; /* Prevents the tooltip from interfering with the cursor */
+    max-width: 250px;
+    
+    /* Animation state */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition-smooth), visibility var(--transition-smooth);
+}
+
+/* Visible state toggled by JavaScript */
+.glossary-tooltip.is-active {
+    opacity: 1;
+    visibility: visible;
+}
